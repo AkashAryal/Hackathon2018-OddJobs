@@ -3,6 +3,20 @@
 		<title>TopSpot - Host</title>
 	</head>
 	<body>
-	
+		<link rel="stylesheet" type="text/css" href="Main.css">
+			<div style = "position: relative; margin-top: 50px" class="form-style">	
+				<h1>Host a Spot</h1>
+
+				<label for="opentime">Spot Opens:</label>
+				<input type="time" id="opentime" name="appt-time"
+               min="0:00" max="11:59" required />
+
+				<label for="appt-time">Spot Closes:</label>
+               <input type="time" id="closetime" name="appt-time"
+               min="0:00" max="11:59:" required />
+
+				<input type="text" name="hostcomment" placeholder="Comment"><br>
+				<a href="MySpots.html"><input type="button" value="Add Spot"></a>
+		</div>
 	</body>
 </html>
