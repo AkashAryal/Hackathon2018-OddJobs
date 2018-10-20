@@ -1,3 +1,7 @@
+<?php
+				ini_set('session.gc_maxlifetime', 3600);
+				session_set_cookie_params(3600);
+				session_start();?>
 <html>
 	<head>
 		<title>TopSpot - My Spots</title>
@@ -10,9 +14,6 @@
 		</ul>
 		<div style = "position: relative; margin-top: 100px" class="form-style">
 			<?php
-				ini_set('session.gc_maxlifetime', 3600);
-				session_set_cookie_params(3600);
-				session_start();
 
 				$host="localhost";
 				$dbusername = "root";
