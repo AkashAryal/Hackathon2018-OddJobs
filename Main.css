@@ -6,7 +6,7 @@
     background: #F7F7F7;
 }
 .form-style h1{
-    background: #4caf50;
+    background: #47f;
     padding: 20px 0;
     font-size: 140%;
     font-weight: 300;
@@ -39,7 +39,7 @@
     margin-bottom: 4%;
     border: 1px solid #ccc;
     padding: 3%;
-    color: #555;
+    color: #47f;
     font: 95% Arial, Helvetica, sans-serif;
 }
 .form-style input[type="text"]:focus,
@@ -53,9 +53,9 @@
 .form-style textarea:focus,
 .form-style select:focus
 {
-    box-shadow: 0 0 5px #4caf50;
+    box-shadow: 0 0 5px #47f;
     padding: 3%;
-    border: 1px solid #4caf50;
+    border: 1px solid #47f;
 }
  
 .form-style input[type="submit"],
@@ -65,8 +65,8 @@
     -moz-box-sizing: border-box;
     width: 100%;
     padding: 3%;
-    background: #4caf50;
-    border-bottom: 2px solid #106713;
+    background: #47f;
+    border-bottom: 2px solid #23f;
     border-top-style: none;
     border-right-style: none;
     border-left-style: none;
@@ -74,7 +74,7 @@
 }
 .form-style input[type="submit"]:hover,
 .form-style input[type="button"]:hover{
-    background: #3d8e41;
+    background: #23f;
 }
 h2 {
 	text-align: center;
@@ -82,4 +82,13 @@ h2 {
 }
 h6 {
 	text-align: center;
+}
+.image{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+	set-size: 60%;
+	margin-top: 50px;
+	
 }

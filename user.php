@@ -20,7 +20,8 @@
        echo "<script>alert('Log back in!');window.location.href='Poll_home.html';</script>";
      }
     ?>
-		<div style = "position: relative; margin-top: 300px" class="form-style">
+		<img src="TopspotLogo.jpg" class="image">
+		<div style = "position: relative; margin-top: 50px" class="form-style">
 			<a href="Guest.html"><input type="button" value="Reserve"></a>
 			<a href="Host.html"><input type="button" value="Host"></a>
 			<a href="MyReservations.html"><input type="button" value="My Reservations"></a>
