@@ -20,6 +20,7 @@
 .form-style input[type="email"],
 .form-style input[type="number"],
 .form-style input[type="search"],
+.form-style input[type="datetime-local"],
 .form-style input[type="time"],
 .form-style input[type="password"],
 .form-style input[type="url"],
