@@ -24,7 +24,7 @@
 			<a href="Guest.html"><input type="button" value="Reserve"></a>
 			<a href="Host.html"><input type="button" value="Host"></a>
 			<a href="MyReservations.html"><input type="button" value="My Reservations"></a>
-			<a href="MySpots.html"><input type="button" value="My Spots"></a>
+			<a href="MySpots.php"><input type="button" value="My Spots"></a>
 			<a href="MyProfile.php"><input type="button" value="My Profile"></a>
 			<a href="logout.php"><input type="button" value="Log Out"></a>
 		<div>
