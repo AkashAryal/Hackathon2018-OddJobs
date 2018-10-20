@@ -39,7 +39,7 @@
     margin-bottom: 4%;
     border: 1px solid #ccc;
     padding: 3%;
-    color: #47f;
+    color: #000000;
     font: 95% Arial, Helvetica, sans-serif;
 }
 .form-style input[type="text"]:focus,
@@ -57,7 +57,7 @@
     padding: 3%;
     border: 1px solid #47f;
 }
- 
+
 .form-style input[type="submit"],
 .form-style input[type="button"]{
     box-sizing: border-box;
@@ -90,5 +90,5 @@ h6 {
     width: 20%;
 	set-size: 60%;
 	margin-top: 50px;
-	
+
 }

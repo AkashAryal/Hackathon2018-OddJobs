@@ -8,11 +8,7 @@
     <?php
     session_start();
     if(isset($_SESSION['user_id'])){
-    echo "
-	
-    <h1 class="form-style">".$_SESSION['user_id']."</h1>
 
-    ";
     }
     else{
 	     session_destroy();
@@ -22,6 +18,9 @@
     ?>
 		<img src="TopspotLogo.jpg" class="image">
 		<div style = "position: relative; margin-top: 50px" class="form-style">
+      <?php
+      echo "<h3 style='text-align: center;'>".$_SESSION['user_id']."</h3>";
+      ?>
 			<a href="Guest.html"><input type="button" value="Reserve"></a>
 			<a href="Host.html"><input type="button" value="Host"></a>
 			<a href="MyReservations.html"><input type="button" value="My Reservations"></a>
