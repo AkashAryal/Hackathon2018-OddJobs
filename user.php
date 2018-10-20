@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>TopSpot - Log In</title>
+		<title>TopSpot - Welcome!</title>
 	</head>
 	<body>
+	<link rel="stylesheet" type="text/css" href="Main.css">
     <?php
     session_start();
     if(isset($_SESSION['user_id'])){
     echo "
-
-    <h1>".$_SESSION['user_id']."</h1>
+	
+    <h1 class="form-style">".$_SESSION['user_id']."</h1>
 
     ";
     }
@@ -19,7 +20,6 @@
        echo "<script>alert('Log back in!');window.location.href='Poll_home.html';</script>";
      }
     ?>
-		<link rel="stylesheet" type="text/css" href="Main.css">
 		<div style = "position: relative; margin-top: 300px" class="form-style">
 			<a href="Guest.html"><input type="button" value="Reserve"></a>
 			<a href="Host.html"><input type="button" value="Host"></a>
