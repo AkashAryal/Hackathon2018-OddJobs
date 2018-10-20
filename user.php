@@ -29,6 +29,6 @@
 			<a href="MyProfile.php"><input type="button" value="My Profile"></a>
 			<a href="logout.php"><input type="button" value="Log Out"></a>
 		<div>
-		<h6>&copy; 2018 3Faggots + Greg Inc.</h6>
+		<h6>&copy; 2018 4Fs Inc.</h6>
 	</body>
 </html>
