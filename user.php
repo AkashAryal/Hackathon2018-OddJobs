@@ -4,6 +4,21 @@
 		<title>TopSpot - Log In</title>
 	</head>
 	<body>
+    <?php
+    session_start();
+    if(isset($_SESSION['user_id'])){
+    echo "
+
+    <h1>".$_SESSION['user_id']."</h1>
+
+    ";
+    }
+    else{
+	     session_destroy();
+       setcookie("PHPSESSID","",time()-3600,"/");
+       echo "<script>alert('Log back in!');window.location.href='Poll_home.html';</script>";
+     }
+    ?>
 		<link rel="stylesheet" type="text/css" href="Main.css">
 		<div style = "position: relative; margin-top: 300px" class="form-style">
 			<a href="Guest.html"><input type="button" value="Reserve"></a>

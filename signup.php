@@ -44,7 +44,7 @@ if(!(empty($username)))
 			$conn->close();
 			die();
 		}
-		$sql="INSERT INTO user (username, password, first_name, last_name, email, address) values('$username','$hashed_password', '$first_name', '$last_name','$email','$address')";
+		$sql="INSERT INTO user (username, password, first_name, last_name, email, address) values('$username','$hashed_password', '$firstname', '$lastname','$email','$address')";
 
 		if($conn->query($sql)){
 			echo "<script>alert('Success! Login Created');window.location.href='user.php'</script>";
