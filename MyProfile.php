@@ -18,14 +18,16 @@
 		 ?>
 		<link rel="stylesheet" type="text/css" href="Main.css">
 		<div style = "position: relative; margin-top: 50px" class="form-style">
-			<?php
-			echo "<h3 style='text-align: center; font=Arial, Helvetica, sans-serif'>Username: ".$_SESSION['user_id']."</h3>";
-			echo "<h3 style='text-align: center; font=Arial, Helvetica, sans-serif'>First Name: ".$_SESSION['first_name']."</h3>";
-			echo "<h3 style='text-align: center; font=Arial, Helvetica, sans-serif'>Last Name: ".$_SESSION['last_name']."</h3>";
-			echo "<h3 style='text-align: center; font=Arial, Helvetica, sans-serif'>E-mail: ".$_SESSION['email']."</h3>";
-			echo "<h3 style='text-align: center; font=Arial, Helvetica, sans-serif'>Address: ".$_SESSION['address']."</h3>";
-			?>
-			<a href="EditProfile"><input type="button" value="Edit Profile"></a>
+			<form method="POST">
+				<?php
+				echo "<h1>Username: ".$_SESSION['user_id']."</h1><br>";
+				echo "<input type="text" name="firstname" placeholder="First Name" value = ".$_SESSION['user_id']."><br>";
+				echo "<input type="text" name="lastname" placeholder="Last Name" value = ".$_SESSION['user_id']."><br>";
+				echo "<input type="text" name="email" placeholder="Email" value = ".$_SESSION['user_id']."><br>";
+				echo "<input type="text" name="address" placeholder="Address" value = ".$_SESSION['user_id']."><br>";
+				?>
+				<a href="EditProfile.php"><input type="button" value="Save Changes"></a>
+			</form>
 		<div>
 	</body>
 </html>
