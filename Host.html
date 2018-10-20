@@ -8,18 +8,17 @@
   			<li><a href="user.php">Home</a></li>
 		</ul>
 
-		<div style = "position: relative; margin-top: 100px" class="form-style">	
+		<div style = "position: relative; margin-top: 100px" class="form-style">
+		<form action="hosting.php" method="POST">
 			<h1>Host a Spot</h1>
-
 			<label for="opentime">Spot Opens:</label>
 			<input type="datetime-local" name="opentime">
-
 			<label for="closetime">Spot Closes:</label>
             <input type="datetime-local" name="opentime">
-
 			<label for="hostcomment">Comment for Guest:</label>
 			<input type="text" name="hostcomment" placeholder="Comment"><br>
-			<a href="MySpots.html"><input type="button" value="Add Spot"></a>
+			<input type="submit" value="Add Spot">
+		</form>
 			</div>
 	</body>
 </html>
