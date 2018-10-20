@@ -4,17 +4,19 @@
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="Main.css">
-		<form action="signup.php" method="POST">
-			<div style = "position: relative; margin-top: 300px">
-			<h1>First name : <input type="text" name="firstname"></h1>
-			<h1>Last Name: <input type="text" name="lastname"></h1>
-			<h1>Create Username: <input type="text" name="username"></h1>
-			<h1>Create Password: <input type="text" name="password"></h1>
-			<h1>E-mail: <input type="text" name="email"></h1>
-			<h1>Address: <input type="text" name="address"></h1>
-			<h1><input type="submit" value="Submit"></h1>
-			</div>
-			<h6>&copy; 2018 3Faggots + Greg Inc.</h6>
-		</form>
+		<div style = "position: relative; margin-top: 100px">
+			<form action="signup.php" method="POST" class="form-style">
+				<h1>Sign Up</h1>
+				<input type="text" name="firstname" placeholder="First Name">
+				<input type="text" name="lastname" placeholder="Last Name">
+				<input type="text" name="username" placeholder="Username">
+				<input type="password" name="password" placeholder="Password">
+				<input type="text" name="email" placeholder="E-mail">
+				<input type="text" name="address" placeholder="Address">
+				<input type="submit" value="Sign Up">
+				<a href="Login.html"><h2>Back to Login</h2></a>
+			</form>
+		</div>
+		<h6>&copy; 2018 3Faggots + Greg Inc.</h6>
 	</body>
 </html>
