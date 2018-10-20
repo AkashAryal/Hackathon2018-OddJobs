@@ -7,14 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="Main.css">
     <?php
     session_start();
-    if(isset($_SESSION['user_id'])){
+    /*if(isset($_SESSION['user_id'])){
 
     }
     else{
 	     session_destroy();
        setcookie("PHPSESSID","",time()-3600,"/");
        echo "<script>alert('Log back in!');window.location.href='Poll_home.html';</script>";
-     }
+     }*/
     ?>
 		<img src="TopspotLogo.jpg" class="image">
 		<div style = "position: relative; margin-top: 50px" class="form-style">
