@@ -40,7 +40,7 @@ if(!(empty($username)))
 			if(password_verify($password, $hashed_password)){
 				$_SESSION["user_id"]=$username;
         $_SESSION['first_name']=$firstname;
-        $_SESSION['last_name']=$firstname;
+        $_SESSION['last_name']=$lastname;
         $_SESSION['email']=$email;
         $_SESSION['address']=$address;
         $conn->close();

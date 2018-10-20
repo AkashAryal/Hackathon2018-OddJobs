@@ -56,7 +56,7 @@ if(!(empty($username)))
 		$conn->close();
 		$_SESSION["user_id"]=$username;
     $_SESSION['first_name']=$firstname;
-    $_SESSION['last_name']=$lastname
+    $_SESSION['last_name']=$lastname;
     $_SESSION['email']=$email;
     $_SESSION['address']=$address;
 		//header('Location: user.php');
