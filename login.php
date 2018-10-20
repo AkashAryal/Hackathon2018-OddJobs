@@ -30,11 +30,20 @@ if(!(empty($username)))
 		$sql="SELECT password FROM user WHERE username='$username'";
 		if($conn->query($sql)){
 			$hashed_password=$conn->query("SELECT password FROM user WHERE username='$username'")->fetch_object()->password;
+      $firstname=$conn->query("SELECT first_name FROM user WHERE username='$username'")->fetch_object()->first_name;
+      $lastname=$conn->query("SELECT last_name FROM user WHERE username='$username'")->fetch_object()->last_name;
+      $email=$conn->query("SELECT email FROM user WHERE username='$username'")->fetch_object()->email;
+      $address=$conn->query("SELECT address FROM user WHERE username='$username'")->fetch_object()->address;
+
 			//echo $hashed_password;
 			//echo $password;
 			if(password_verify($password, $hashed_password)){
 				$_SESSION["user_id"]=$username;
-				$conn->close();
+        $_SESSION['first_name']=$firstname;
+        $_SESSION['last_name']=$firstname;
+        $_SESSION['email']=$email;
+        $_SESSION['address']=$address;
+        $conn->close();
 				header('Location: user.php');
 
 			}
