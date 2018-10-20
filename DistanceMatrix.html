@@ -61,9 +61,7 @@ var destinationC = Greg's Shack;
         var markersArray = [];
 
         var origin = '516 Stone Dr';
-        var destinationA = '2063 College Heights Rd';
-        var destinationB = '4304 Ladasa Cir';
-        var destinationC = '2821 Tatarrax Dr';
+        var listofdestinations = ['4304 Ladasa Cir', '2063 College Heights', '2821 Tatarrax Dr'];
 
         var destinationIcon = 'https://chart.googleapis.com/chart?' +
             'chst=d_map_pin_letter&chld=D|FF0000|000000';
@@ -78,11 +76,9 @@ var destinationC = Greg's Shack;
         var service = new google.maps.DistanceMatrixService;
         service.getDistanceMatrix({
           origins: [origin],
-          destinations: [destinationA, destinationB, destinationC],
-          travelMode: 'DRIVING',
+          destinations: listofdestinations,
+          travelMode: 'WALKING',
           unitSystem: google.maps.UnitSystem.IMPERIAL,
-          avoidHighways: false,
-          avoidTolls: false
         }, function(response, status) {
           if (status !== 'OK') {
             alert('Error was: ' + status);
