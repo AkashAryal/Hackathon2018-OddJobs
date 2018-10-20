@@ -5,7 +5,7 @@
 	</head>
 	<body>
 		<link rel="stylesheet" type="text/css" href="Main.css">
-		<div style = "position: relative; margin-top: 100px" class="form-style">
+		<div style = "position: relative; margin-top: 300px" class="form-style">
 			<a href="Guest.html"><input type="button" value="Reserve"></a>
 			<a href="Host.html"><input type="button" value="Host"></a>
 			<a href="MyReservations.html"><input type="button" value="My Reservations"></a>
